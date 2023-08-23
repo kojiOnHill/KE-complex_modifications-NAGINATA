@@ -1,18 +1,18 @@
-## 薙刀式v15(fix版) for Karabiner-Elements (Work In Progress)
-
-forked from [tor-nky/KE-complex_modifications-NAGINATA](https://github.com/tor-nky/KE-complex_modifications-NAGINATA)
-
-----
-
-Original README:
-
 # Mac で薙刀式を使うスクリプト
+
+### 薙刀式配列v15（fix版）
+
+[【薙刀式】v15fix版](http://oookaworks.seesaa.net/article/500180437.html#comment&gsc.tab=0)
+
+* docs/json/Naginata_v15
+* docs/json/Naginata_v15_for_typing_game (ローマ字タイピングゲーム用)
 
 ### 薙刀式配列v14（集大成版） 2021年12月10日付
 
 [【薙刀式】v14集大成版](http://oookaworks.seesaa.net/article/484704326.html#gsc.tab=0)
 
 * docs/json/Naginata_v14-TypeB
+* docs/json/Naginata_v14-TypeB_for_typing_game (ローマ字タイピングゲーム用)
 
 ローマ字入力を使います。
 
