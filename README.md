@@ -1,3 +1,11 @@
+## 薙刀式v15(fix版) for Karabiner-Elements (Work In Progress)
+
+forked from [tor-nky/KE-complex_modifications-NAGINATA](https://github.com/tor-nky/KE-complex_modifications-NAGINATA)
+
+----
+
+Original README:
+
 # Mac で薙刀式を使うスクリプト
 
 ### 薙刀式配列v14（集大成版） 2021年12月10日付
