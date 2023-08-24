@@ -3601,14 +3601,6 @@
             ]
         },
 
-        {"description":"小 単打 → ヴ","type":"basic",
-            "conditions":[
-                {"input_sources":[{"input_mode_id":"Roman$"}],"type":"input_source_unless"}],
-            "from":{"key_code":"q"},
-            "to":[
-                {"key_code":"v"},{"key_code":"u","repeat":false}
-            ]
-        },
         {"description":"(シンクロ) 小, や → (ゃ)","type":"basic",
             "conditions":[
                 {"input_sources":[{"input_mode_id":"Roman$"}],"type":"input_source_unless"}],
@@ -4408,13 +4400,13 @@
             "to":[{"key_code":"d"},{"key_code":"a","repeat":false}
             ]
         },
-        {"description":"[左濁] う → ヴ","type":"basic",
+        {"description":"[左濁] つ → づ","type":"basic",
             "conditions":[{"type":"variable_if","name":"DR","value":1},
                 {"type":"variable_unless","name":"shifted","value":1},
                 
                 {"input_sources":[{"input_mode_id":"Roman$"}],"type":"input_source_unless"}],
             "from":{"key_code":"l"},
-            "to":[{"key_code":"v"},{"key_code":"u","repeat":false}
+            "to":[{"key_code":"d"},{"key_code":"u","repeat":false}
             ]
         },
         {"description":"[左濁] へ → べ","type":"basic",
