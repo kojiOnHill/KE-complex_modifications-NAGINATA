@@ -1,20 +1,5 @@
-{"title":"Japanese NAGINATA STYLE (v15) [ローマ字タイピングゲーム用] ※A群、B群、C群の順に登録してください。同じ群の順序は自由です。","rules":[
-    {"description":"A1: 薙刀式v15 fix版《同時連続シフト拡張》 [ローマ字タイピングゲーム用]","manipulators":[
-        {"description":"(シンクロ) Sp, 小","type":"basic",
-            "conditions":[
-                {"input_sources":[{"input_mode_id":"Roman$"}],"type":"input_source_unless"}],
-            "parameters":{"basic.simultaneous_threshold_milliseconds":60},
-            "from":{"simultaneous":[
-                    {"key_code":"spacebar"},
-                    {"key_code":"q"}
-                ],"simultaneous_options":{"key_down_order":"strict_inverse",
-                "to_after_key_up":[{"set_variable":{"name":"shifted","value":0}},{"set_variable":{"name":"KO","value":0}}]}
-            },
-            "to":[
-                    {"set_variable":{"name":"shifted","value":1}},
-                    {"set_variable":{"name":"KO","value":1}}
-                ]
-        },
+{"title":"Japanese NAGINATA STYLE (v15)  [★ローマ字タイピングゲーム用★] ※A群、B群、C群の順に登録してください。同じ群の順序は自由です。","rules":[
+    {"description":"A1: 薙刀式v15 fix版《同時連続シフト拡張》 [★ローマ字タイピングゲーム用★]","manipulators":[
         {"description":"(シンクロ) Sp, ぬ","type":"basic",
             "conditions":[
                 {"input_sources":[{"input_mode_id":"Roman$"}],"type":"input_source_unless"}],
@@ -424,7 +409,7 @@
     ]},
 
 
-    {"description":"A2: 薙刀式v13以降《編集モード簡便化》 [ローマ字タイピングゲーム用]","manipulators":[
+    {"description":"A2: 薙刀式v13以降《編集モード簡便化》 [★ローマ字タイピングゲーム用★]","manipulators":[
         {"description":"(シンクロ) 編集モード1左","type":"basic",
             "conditions":[{"type":"variable_unless","name":"shifted","value":1},
                 
@@ -682,7 +667,7 @@
     ]},
 
 
-    {"description":"B: 薙刀式v15 fix版 [ローマ字タイピングゲーム用]","manipulators":[
+    {"description":"B: 薙刀式v15 fix版 [★ローマ字タイピングゲーム用★]","manipulators":[
         {"description":"(U.S.使用)(シンクロ) あ, い, 小 → 新","type":"basic",
             "conditions":[{"type":"variable_unless","name":"shifted","value":1},
                 
@@ -4883,13 +4868,15 @@
             ]
         },
 
-        {"description":"小","type":"basic",
+        {"description":"ヴ","type":"basic",
             "conditions":[
-                {"input_sources":[{"input_mode_id":"Roman$"}],"type":"input_source_unless"}],
-            "from":{"key_code":"q"},
-            "to":[{"set_variable":{"name":"KO","value":1}}
+                
+                {"input_sources":[{"input_mode_id":"Roman$"}],"type":"input_source_unless"}
             ],
-            "to_after_key_up":[{"set_variable":{"name":"KO","value":0}}]
+            "from":{"key_code":"q"},
+            "to":[
+                {"key_code":"v"},{"key_code":"u","repeat":false}
+            ]
         },
         {"description":"き","type":"basic",
             "conditions":[
@@ -5097,7 +5084,7 @@
     ]},
 
 
-    {"description":"C1: 薙刀式《左右シフトかな拡張》 [ローマ字タイピングゲーム用]","manipulators":[
+    {"description":"C1: 薙刀式《左右シフトかな拡張》 [★ローマ字タイピングゲーム用★]","manipulators":[
         {"description":"左シフトキー","type":"basic",
             "conditions":[
                 {"input_sources":[{"input_mode_id":"Roman$"}],"type":"input_source_unless"}],
@@ -5318,7 +5305,7 @@
     ]},
 
 
-    {"description":"C2: 薙刀式《エンター同時押しシフト拡張》 [ローマ字タイピングゲーム用]","manipulators":[
+    {"description":"C2: 薙刀式《エンター同時押しシフト拡張》 [★ローマ字タイピングゲーム用★]","manipulators":[
         {"description":"エンターキー","type":"basic",
             "conditions":[
                 {"input_sources":[{"input_mode_id":"Roman$"}],"type":"input_source_unless"}],
