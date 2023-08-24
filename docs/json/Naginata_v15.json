@@ -393,7 +393,7 @@
                 {"key_code":"m"},{"key_code":"u","repeat":false}
             ]
         },
-        {"description":"(シンクロ) Sp, ふ","type":"basic",
+        {"description":"(シンクロ) Sp, わ","type":"basic",
             "conditions":[{"input_sources":[{"language":"ja"}],"type":"input_source_if"},
                 {"input_sources":[{"input_mode_id":"Roman$"}],"type":"input_source_unless"}],
             "parameters":{"basic.simultaneous_threshold_milliseconds":60},
@@ -404,7 +404,7 @@
                 "to_after_key_up":[{"set_variable":{"name":"shifted","value":0}}]}
             },
             "to":[{"set_variable":{"name":"shifted","value":1}},
-                {"key_code":"h"},{"key_code":"u","repeat":false}
+                {"key_code":"w"},{"key_code":"a","repeat":false}
             ]
         },
         {"description":"(シンクロ) Sp, れ","type":"basic",
@@ -2110,76 +2110,6 @@
                 {"key_code":"d"},{"key_code":"y"},{"key_code":"e","repeat":false}
             ]
         },
-        {"description":"(シンクロ) 左半, ふ, あ → ふぁ","type":"basic",
-            "conditions":[{"type":"variable_unless","name":"shifted","value":1},
-                {"input_sources":[{"language":"ja"}],"type":"input_source_if"},
-                {"input_sources":[{"input_mode_id":"Roman$"}],"type":"input_source_unless"}],
-            "from":{"simultaneous":[
-                    {"key_code":"v"},
-                    {"key_code":"period"},
-                    {"key_code":"j"}
-                ],"simultaneous_options":{"to_after_key_up":[{"set_variable":{"name":"HR","value":0}},{"set_variable":{"name":"DL","value":0}}]}
-            },
-            "to":[{"set_variable":{"name":"HR","value":1}},{"set_variable":{"name":"DL","value":1}},
-                {"key_code":"f"},{"key_code":"a","repeat":false}
-            ]
-        },
-        {"description":"(シンクロ) 左半, ふ, い → ふぃ","type":"basic",
-            "conditions":[{"type":"variable_unless","name":"shifted","value":1},
-                {"input_sources":[{"language":"ja"}],"type":"input_source_if"},
-                {"input_sources":[{"input_mode_id":"Roman$"}],"type":"input_source_unless"}],
-            "from":{"simultaneous":[
-                    {"key_code":"v"},
-                    {"key_code":"period"},
-                    {"key_code":"k"}
-                ],"simultaneous_options":{"to_after_key_up":[{"set_variable":{"name":"HR","value":0}}]}
-            },
-            "to":[{"set_variable":{"name":"HR","value":1}},
-                {"key_code":"f"},{"key_code":"i","repeat":false}
-            ]
-        },
-        {"description":"(シンクロ) 左半, ふ, え → ふぇ","type":"basic",
-            "conditions":[{"type":"variable_unless","name":"shifted","value":1},
-                {"input_sources":[{"language":"ja"}],"type":"input_source_if"},
-                {"input_sources":[{"input_mode_id":"Roman$"}],"type":"input_source_unless"}],
-            "from":{"simultaneous":[
-                    {"key_code":"v"},
-                    {"key_code":"period"},
-                    {"key_code":"o"}
-                ],"simultaneous_options":{"to_after_key_up":[{"set_variable":{"name":"HR","value":0}}]}
-            },
-            "to":[{"set_variable":{"name":"HR","value":1}},
-                {"key_code":"f"},{"key_code":"e","repeat":false}
-            ]
-        },
-        {"description":"(シンクロ) 左半, ふ, お → ふぉ","type":"basic",
-            "conditions":[{"type":"variable_unless","name":"shifted","value":1},
-                {"input_sources":[{"language":"ja"}],"type":"input_source_if"},
-                {"input_sources":[{"input_mode_id":"Roman$"}],"type":"input_source_unless"}],
-            "from":{"simultaneous":[
-                    {"key_code":"v"},
-                    {"key_code":"period"},
-                    {"key_code":"n"}
-                ],"simultaneous_options":{"to_after_key_up":[{"set_variable":{"name":"HR","value":0}}]}
-            },
-            "to":[{"set_variable":{"name":"HR","value":1}},
-                {"key_code":"f"},{"key_code":"o","repeat":false}
-            ]
-        },
-        {"description":"(シンクロ) 左半, ふ, ゆ → ふゅ","type":"basic",
-            "conditions":[{"type":"variable_unless","name":"shifted","value":1},
-                {"input_sources":[{"language":"ja"}],"type":"input_source_if"},
-                {"input_sources":[{"input_mode_id":"Roman$"}],"type":"input_source_unless"}],
-            "from":{"simultaneous":[
-                    {"key_code":"v"},
-                    {"key_code":"period"},
-                    {"key_code":"p"}
-                ],"simultaneous_options":{"to_after_key_up":[{"set_variable":{"name":"HR","value":0}}]}
-            },
-            "to":[{"set_variable":{"name":"HR","value":1}},
-                {"key_code":"f"},{"key_code":"y"},{"key_code":"u","repeat":false}
-            ]
-        },
         {"description":"(シンクロ) 左濁, う, あ → ヴぁ","type":"basic",
             "conditions":[{"type":"variable_unless","name":"shifted","value":1},
                 {"input_sources":[{"language":"ja"}],"type":"input_source_if"},
@@ -2817,70 +2747,6 @@
             "to":[{"key_code":"d"},{"key_code":"y"},{"key_code":"e","repeat":false}
             ]
         },
-        {"description":"[左半] (シンクロ) ふ, あ → ふぁ","type":"basic",
-            "conditions":[{"type":"variable_if","name":"HR","value":1},
-                {"type":"variable_unless","name":"shifted","value":1},
-                {"input_sources":[{"language":"ja"}],"type":"input_source_if"},
-                {"input_sources":[{"input_mode_id":"Roman$"}],"type":"input_source_unless"}],
-            "from":{"simultaneous":[
-                {"key_code":"period"},
-                {"key_code":"j"}
-                ],"simultaneous_options":{"to_after_key_up":[{"set_variable":{"name":"DL","value":0}}]}
-            },
-            "to":[{"set_variable":{"name":"DL","value":1}},
-                {"key_code":"f"},{"key_code":"a","repeat":false}
-            ]
-        },
-        {"description":"[左半] (シンクロ) ふ, い → ふぃ","type":"basic",
-            "conditions":[{"type":"variable_if","name":"HR","value":1},
-                {"type":"variable_unless","name":"shifted","value":1},
-                {"input_sources":[{"language":"ja"}],"type":"input_source_if"},
-                {"input_sources":[{"input_mode_id":"Roman$"}],"type":"input_source_unless"}],
-            "from":{"simultaneous":[
-                {"key_code":"period"},
-                {"key_code":"k"}
-                ],"simultaneous_options":{"to_after_key_up":[{"set_variable":{"name":"DL","value":0}}]}
-            },
-            "to":[{"set_variable":{"name":"DL","value":1}},
-                {"key_code":"f"},{"key_code":"i","repeat":false}
-            ]
-        },
-        {"description":"[左半] (シンクロ) ふ, え → ふぇ","type":"basic",
-            "conditions":[{"type":"variable_if","name":"HR","value":1},
-                {"type":"variable_unless","name":"shifted","value":1},
-                {"input_sources":[{"language":"ja"}],"type":"input_source_if"},
-                {"input_sources":[{"input_mode_id":"Roman$"}],"type":"input_source_unless"}],
-            "from":{"simultaneous":[
-                {"key_code":"period"},
-                {"key_code":"o"}
-            ]},
-            "to":[{"key_code":"f"},{"key_code":"e","repeat":false}
-            ]
-        },
-        {"description":"[左半] (シンクロ) ふ, お → ふぉ","type":"basic",
-            "conditions":[{"type":"variable_if","name":"HR","value":1},
-                {"type":"variable_unless","name":"shifted","value":1},
-                {"input_sources":[{"language":"ja"}],"type":"input_source_if"},
-                {"input_sources":[{"input_mode_id":"Roman$"}],"type":"input_source_unless"}],
-            "from":{"simultaneous":[
-                {"key_code":"period"},
-                {"key_code":"n"}
-            ]},
-            "to":[{"key_code":"f"},{"key_code":"o","repeat":false}
-            ]
-        },
-        {"description":"[左半] (シンクロ) ふ, ゆ → ふゅ","type":"basic",
-            "conditions":[{"type":"variable_if","name":"HR","value":1},
-                {"type":"variable_unless","name":"shifted","value":1},
-                {"input_sources":[{"language":"ja"}],"type":"input_source_if"},
-                {"input_sources":[{"input_mode_id":"Roman$"}],"type":"input_source_unless"}],
-            "from":{"simultaneous":[
-                {"key_code":"period"},
-                {"key_code":"p"}
-            ]},
-            "to":[{"key_code":"f"},{"key_code":"y"},{"key_code":"u","repeat":false}
-            ]
-        },
         {"description":"[左濁] (シンクロ) う, あ → ヴぁ","type":"basic",
             "conditions":[{"type":"variable_if","name":"DR","value":1},
                 {"type":"variable_unless","name":"shifted","value":1},
@@ -3243,6 +3109,19 @@
                 {"key_code":"b"},{"key_code":"u","repeat":false}
             ]
         },
+        {"description":"(シンクロ) 左半濁, ふ → ぷ","type":"basic",
+            "conditions":[{"type":"variable_unless","name":"shifted","value":1},
+                {"input_sources":[{"language":"ja"}],"type":"input_source_if"},
+                {"input_sources":[{"input_mode_id":"Roman$"}],"type":"input_source_unless"}],
+            "from":{"simultaneous":[
+                {"key_code":"v"},
+                {"key_code":"semicolon"}
+                ],"simultaneous_options":{"to_after_key_up":[{"set_variable":{"name":"DR","value":0}}]}
+            },
+            "to":[{"set_variable":{"name":"DR","value":1}},
+                {"key_code":"p"},{"key_code":"u","repeat":false}
+            ]
+        },
         {"description":"(シンクロ) 左濁, た → だ","type":"basic",
             "conditions":[{"type":"variable_unless","name":"shifted","value":1},
                 {"input_sources":[{"language":"ja"}],"type":"input_source_if"},
@@ -3436,19 +3315,6 @@
             },
             "to":[{"set_variable":{"name":"DL","value":1}},
                 {"key_code":"z"},{"key_code":"o","repeat":false}
-            ]
-        },
-        {"description":"(シンクロ) 左半, ふ → ぷ","type":"basic",
-            "conditions":[{"type":"variable_unless","name":"shifted","value":1},
-                {"input_sources":[{"language":"ja"}],"type":"input_source_if"},
-                {"input_sources":[{"input_mode_id":"Roman$"}],"type":"input_source_unless"}],
-            "from":{"simultaneous":[
-                {"key_code":"v"},
-                {"key_code":"period"}
-                ],"simultaneous_options":{"to_after_key_up":[{"set_variable":{"name":"HR","value":0}}]}
-            },
-            "to":[{"set_variable":{"name":"HR","value":1}},
-                {"key_code":"p"},{"key_code":"u","repeat":false}
             ]
         },
         {"description":"(シンクロ) 左半, へ → ぺ","type":"basic",
@@ -4524,6 +4390,15 @@
             "to":[{"key_code":"b"},{"key_code":"u","repeat":false}
             ]
         },
+        {"description":"[左半濁] ふ → ぷ","type":"basic",
+            "conditions":[{"type":"variable_if","name":"DR","value":1},
+                {"type":"variable_unless","name":"shifted","value":1},
+                {"input_sources":[{"language":"ja"}],"type":"input_source_if"},
+                {"input_sources":[{"input_mode_id":"Roman$"}],"type":"input_source_unless"}],
+            "from":{"key_code":"semicolon"},
+            "to":[{"key_code":"p"},{"key_code":"u","repeat":false}
+            ]
+        },
         {"description":"[左濁] た → だ","type":"basic",
             "conditions":[{"type":"variable_if","name":"DR","value":1},
                 {"type":"variable_unless","name":"shifted","value":1},
@@ -4531,15 +4406,6 @@
                 {"input_sources":[{"input_mode_id":"Roman$"}],"type":"input_source_unless"}],
             "from":{"key_code":"n"},
             "to":[{"key_code":"d"},{"key_code":"a","repeat":false}
-            ]
-        },
-        {"description":"[左濁] ふ → ぶ","type":"basic",
-            "conditions":[{"type":"variable_if","name":"DR","value":1},
-                {"type":"variable_unless","name":"shifted","value":1},
-                {"input_sources":[{"language":"ja"}],"type":"input_source_if"},
-                {"input_sources":[{"input_mode_id":"Roman$"}],"type":"input_source_unless"}],
-            "from":{"key_code":"period"},
-            "to":[{"key_code":"b"},{"key_code":"u","repeat":false}
             ]
         },
         {"description":"[左濁] う → ヴ","type":"basic",
@@ -4684,15 +4550,6 @@
                 {"input_sources":[{"input_mode_id":"Roman$"}],"type":"input_source_unless"}],
             "from":{"key_code":"b"},
             "to":[{"key_code":"z"},{"key_code":"o","repeat":false}
-            ]
-        },
-        {"description":"[左半] ふ → ぷ","type":"basic",
-            "conditions":[{"type":"variable_if","name":"HR","value":1},
-                {"type":"variable_unless","name":"shifted","value":1},
-                {"input_sources":[{"language":"ja"}],"type":"input_source_if"},
-                {"input_sources":[{"input_mode_id":"Roman$"}],"type":"input_source_unless"}],
-            "from":{"key_code":"period"},
-            "to":[{"key_code":"p"},{"key_code":"u","repeat":false}
             ]
         },
         {"description":"[左半] へ → ぺ","type":"basic",
@@ -5025,12 +4882,12 @@
             "to":[{"key_code":"m"},{"key_code":"u","repeat":false}
             ]
         },
-        {"description":"[Sp] ふ","type":"basic",
+        {"description":"[Sp] わ","type":"basic",
             "conditions":[{"type":"variable_if","name":"shifted","value":1},
                 {"input_sources":[{"language":"ja"}],"type":"input_source_if"},
                 {"input_sources":[{"input_mode_id":"Roman$"}],"type":"input_source_unless"}],
             "from":{"key_code":"period"},
-            "to":[{"key_code":"h"},{"key_code":"u","repeat":false}
+            "to":[{"key_code":"w"},{"key_code":"a","repeat":false}
             ]
         },
 
@@ -5459,11 +5316,11 @@
             "to":[{"key_code":"m"},{"key_code":"u","repeat":false}
             ]
         },
-        {"description":"[Sp] ふ","type":"basic",
+        {"description":"[Sp] わ","type":"basic",
             "conditions":[{"input_sources":[{"language":"ja"}],"type":"input_source_if"},
                 {"input_sources":[{"input_mode_id":"Roman$"}],"type":"input_source_unless"}],
             "from":{"key_code":"period","modifiers":{"mandatory":["shift"]}},
-            "to":[{"key_code":"h"},{"key_code":"u","repeat":false}
+            "to":[{"key_code":"w"},{"key_code":"left_arrow","repeat":false}
             ]
         }
     ]},
