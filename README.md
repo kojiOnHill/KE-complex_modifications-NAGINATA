@@ -1,5 +1,11 @@
 # Mac で薙刀式を使うスクリプト
 
+### 薙刀式配列v16（快速版）
+
+[【薙刀式】v16快速版](http://oookaworks.seesaa.net/article/509198141.html#gsc.tab=0)
+
+* docs/json/Naginata_v16
+
 ### 薙刀式配列v15（fix版）
 
 [【薙刀式】v15fix版](http://oookaworks.seesaa.net/article/500180437.html#comment&gsc.tab=0)
@@ -81,6 +87,7 @@ Mac OS Monterey (12.3.1) + Karabiner-Elements (v14.4.0) + 日本語IM または 
 # 補足
 
 [Mac薙刀式v11 sorshi版](https://github.com/sorshi/KE-complex_modifications-NAGINATA) を元にしました。
+（追記）それを元にした [funatsufumiya/KE-complex_modifications-NAGINATA-v15](https://github.com/funatsufumiya/KE-complex_modifications-NAGINATA-v15) を元にしました。なお、Karabiner-Elementsに依存しない、スクラッチから書かれた実装があります（[弁慶](https://github.com/eswai/Benkei)）。
 
 なお、スペースキーの定義以外の全てを jsonファイル直接編集で作成しています。
 
