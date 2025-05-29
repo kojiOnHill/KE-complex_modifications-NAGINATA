@@ -87,7 +87,8 @@ Mac OS Monterey (12.3.1) + Karabiner-Elements (v14.4.0) + 日本語IM または 
 # 補足
 
 [Mac薙刀式v11 sorshi版](https://github.com/sorshi/KE-complex_modifications-NAGINATA) を元にしました。
-（追記）それを元にした [funatsufumiya/KE-complex_modifications-NAGINATA-v15](https://github.com/funatsufumiya/KE-complex_modifications-NAGINATA-v15) を元にしました。なお、Karabiner-Elementsに依存しない、スクラッチから書かれた実装があります（[弁慶](https://github.com/eswai/Benkei)）。
+
+（追記）それを元にした [funatsufumiya/KE-complex_modifications-NAGINATA-v15](https://github.com/funatsufumiya/KE-complex_modifications-NAGINATA-v15) を元にしました。本体のjsonファイルは、[KE-complex_modificationsのfork](https://github.com/kojiOnHill/KE-complex_modifications)からのコピーです。なお、Karabiner-Elementsに依存しない、[Benkei](https://github.com/eswai/Benkei)というスクラッチから書かれた実装があります。
 
 なお、スペースキーの定義以外の全てを jsonファイル直接編集で作成しています。
 
